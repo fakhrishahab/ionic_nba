@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title slot="end" *ngIf=playerDetail>
+        {{playerDetail.first_name}}
+      </ion-title>
+      <ion-buttons>
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+    <ion-card *ngIf=playerDetail class="player-card">
+        <img src="./assets/basketball_player.png" />
+        <ion-card-header>
+            <ion-card-subtitle>Position: {{playerDetail.position}}</ion-card-subtitle>
+            <ion-card-title>{{playerDetail.first_name}} {{playerDetail.last_name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="basketball" slot="start"></ion-icon>
+                    <ion-label>{{playerDetail.team.full_name}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="pin" slot="start"></ion-icon>
+                    <ion-label>{{playerDetail.team.city}} City</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="compass" slot="start"></ion-icon>
+                    <ion-label>{{playerDetail.team.conference}} Conference</ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

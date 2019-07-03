@@ -1,0 +1,11 @@
+<ion-content fullscreen>
+  <div class="login-content">
+      <img src="./assets/nba_icon.png" class="login-img"/>
+      <div class="ion-padding login-container">
+          <h2>LOGIN</h2>
+          <ion-button (click)="login()" expand="block">Login with Google</ion-button>
+          <div *ngIf="message !== ''">{{message}}</div>
+      </div>
+  </div>
+    
+</ion-content>

@@ -1,0 +1,2 @@
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk  alias_name
+/Users/akhmafak/Library/Android/sdk/build-tools/29.0.0/zipalign -v 4  ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk NbaXL.apk

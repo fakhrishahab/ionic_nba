@@ -1,14 +1,26 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      NBA Player List
     </ion-title>
+    <ion-buttons (click)="logout()" slot="end">
+      <ion-icon slot="icon-only" name="exit"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-list>
+      <ion-item *ngFor="let player of allPlayerList" routerLink="/player_detail/{{player.id}}">
+        <div>{{player.first_name}} {{player.last_name}}</div>
+      </ion-item>
+    </ion-list>
+    <div class="home-loading" *ngIf="showLoading">
+      <ion-spinner name="crescent" ></ion-spinner>
+    </div>
+    <ion-button (click)="loaddata()" expand="block" color="medium">
+      Load More
+    </ion-button>
   </div>
 </ion-content>
