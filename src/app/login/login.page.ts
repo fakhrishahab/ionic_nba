@@ -28,7 +28,14 @@ export class LoginPage {
     }
 
     login() {
-        this.googlePlus.login({ })
+        // this.googlePlus.getSigningCertificateFingerprint((res: any) => {
+        //     alert(res)
+        // })
+
+        this.googlePlus.login({ 
+            'webClientId': '916177638491-b61k0bl2fpgrnnvv216osr1e715atfqj.apps.googleusercontent.com',
+            'offline': true
+        })
             .then(res => {
                 const { email, userId, displayName, idToken, imageUrl, accessToken } = res;
                 // this.message = `Hi ,${res.displayName}`;
@@ -52,7 +59,7 @@ export class LoginPage {
                 
             })
             .catch(err => {
-                this.message = 'Error login with code: '+err;
+                this.message = 'Failed login with code: '+err;
             })
     }
 

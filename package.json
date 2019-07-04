@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ionic serve",
-    "build:dev": "ionic cordova emulate android --livereload --consolelogs --device --port=8000"
+    "build:dev": "ionic cordova emulate android --consolelogs --livereload --device --port=8500"
   },
   "private": true,
   "dependencies": {
@@ -86,8 +86,8 @@
       },
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-googleplus": {
-        "REVERSED_CLIENT_ID": "apps.googleusercontent.com.916177638491-4ep8ia7bsi4ue57r6mds0pilip5kgv9s",
-        "WEB_APPLICATION_CLIENT_ID": "mywebapplicationclientid"
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.916177638491-phrrihg955nf20i3b0a4k0t0dr3cpufe",
+        "WEB_APPLICATION_CLIENT_ID": "916177638491-phrrihg955nf20i3b0a4k0t0dr3cpufe.apps.googleusercontent.com"
       },
       "cordova-plugin-nativestorage": {},
       "cordova-sqlite-storage": {},

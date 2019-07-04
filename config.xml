@@ -11,6 +11,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />
@@ -90,7 +91,7 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-googleplus" source="npm">
-        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.274218428185-cmufellv9a936041e4ijprmstc5497aa" />
-        <variable name="WEB_APPLICATION_CLIENT_ID" value="274218428185-cmufellv9a936041e4ijprmstc5497aa.apps.googleusercontent.com" />
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.916177638491-2m1pd86msjn1oiuehq8iedtg4pdma0ga" />
+        <variable name="WEB_APPLICATION_CLIENT_ID" value="916177638491-b61k0bl2fpgrnnvv216osr1e715atfqj.apps.googleusercontent.com" />
     </plugin>
 </widget>
